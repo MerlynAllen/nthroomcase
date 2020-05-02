@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Nth Room Case</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+</head>
+
+<body>
+    <div id="cover-container">
+        <div id="title-filter">
+            <div id="title" onmouseover="underline_in();" onmouseout="underline_out();">
+                #&nbsp;MY LIFE IS NOT YOUR PORN&nbsp;#
+                <div id="u-line"></div>
+            </div>
+            <div id="subtitle">THE
+                <red>N<sup>TH</sup></red> ROOM CASE
+            </div>
+            <img src="down-arrow.svg" alt="enter" onclick="cover_clicked();" id="enter" onmouseover="enter_in();" onmouseout="enter_out();">
+
+        </div>
+        <div id="bg"></div>
+
+    </div>
+    <div id="main">
+        <div id="language">
+            <div class="button" id="en" onclick="window.location.href = '/en'">English</div>
+            <div class="button" id="ja" onclick="window.location.href = '/ja'">日本語</div>
+            <div class="button" id="ko" alt="The Korean version is translated by Google." onclick="window.location.href = '/ko'">한국어</div>
+        </div>
+        <hr />
+        <div id="content">
+            <div class="content-container">
+                <div id="heading">
+                    <h1>
+                        <red>
+                            N号房事件——启示录
+                        </red>
+                    </h1>
+                    <p>
+                        这个网站的建立旨在警示人们，两性平权，在全世界范围内都还有很长一段路要走……
+                    </p>
+                </div>
+                <hr />
+                <div id="box" class="text-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navigator">
+        <div class="button" id="abstract" onclick="get('p1');">简介</div>
+        <div class="button" id="progress" onclick="get('p2');">事件脉络</div>
+        <div class="button" id="why" onclick="get('p3');">为什么</div>
+        <div class="button" id="reaction" onclick="get('p4');">现象</div>
+        <div class="button" id="about" onclick="get('about');">关于</div>
+    </div>
+
+    <div id="footer">
+        <span>©2020 The Nth Room Case&nbsp;·&nbsp;N号房事件——启示录</span>
+        <span>CONTACT ME | merlynallen2001@outlook.com</span>
+        <span><span>Designed by Merlyn</span>&nbsp;·&nbsp;<span>Inspired by <a 
+                    href="https://nthroom.carrd.co">nthroom.carrd.co</a></span> </span>
+        <span style="font-family: custom-cn;">本作品采用<a rel="license" 
+                href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。</span>
+    </div>
+    <script src="script.js"></script>
+    <script src="getcontent.js"></script>
+    <script>
+        (window.onload = function() {
+            alert('建议使用PC端Chrome浏览。');
+            // var j = new XMLHttpRequest();
+            // j.open('GET', '//nthroomcase.imerlyn.top:8090/count', true);
+            // j.send();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Nth Room Case</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+</head>
+
+<body>
+    <div id="cover-container">
+        <div id="title-filter">
+            <div id="title" onmouseover="underline_in();" onmouseout="underline_out();">
+                #&nbsp;MY LIFE IS NOT YOUR PORN&nbsp;#
+                <div id="u-line"></div>
+            </div>
+            <div id="subtitle">THE
+                <red>N<sup>TH</sup></red> ROOM CASE
+            </div>
+            <img src="down-arrow.svg" alt="enter" onclick="cover_clicked();" id="enter" onmouseover="enter_in();" onmouseout="enter_out();">
+
+        </div>
+        <div id="bg"></div>
+
+    </div>
+    <div id="main">
+        <div id="language">
+            <div class="button" id="en" onclick="window.location.href = '/en'">English</div>
+            <div class="button" id="ja" onclick="window.location.href = '/ja'">日本語</div>
+            <div class="button" id="ko" alt="The Korean version is translated by Google." onclick="window.location.href = '/ko'">한국어</div>
+        </div>
+        <hr />
+        <div id="content">
+            <div class="content-container">
+                <div id="heading">
+                    <h1>
+                        <red>
+                            N 호 사건 계시
+                        </red>
+                    </h1>
+                    <p>
+                        이 웹 사이트의 설립은 사람들에게 남녀 평등이 여전히 전 세계에서 아직 멀다는 것을 경고하기위한 것입니다 ...
+                    </p>
+                </div>
+                <hr />
+                <div id="box" class="text-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navigator">
+        <div class="button" id="abstract" onclick="get('p1');">소개</div>
+        <div class="button" id="progress" onclick="get('p2');">이벤트 상황</div>
+        <div class="button" id="why" onclick="get('p3');">왜</div>
+        <div class="button" id="reaction" onclick="get('p4');">현상</div>
+        <div class="button" id="about" onclick="get('about');">소개</div>
+    </div>
+
+    <div id="footer">
+        <span>©2020 The Nth Room Case&nbsp;·&nbsp;N号房事件——启示录</span>
+        <span>CONTACT ME | merlynallen2001@outlook.com</span>
+        <span><span>Designed by Merlyn</span>&nbsp;·&nbsp;<span>Inspired by <a 
+                    href="https://nthroom.carrd.co">nthroom.carrd.co</a></span> </span>
+        <span style="font-family: custom-cn;">이 작품은 를 사용합니다<a rel = "license"
+                             href = "http://creativecommons.org/licenses/by/4.0/"> 라이센스에 대한 Creative Commons Attribution 4.0 국제 라이센스 계약 </a></span>
+    </div>
+    <script src="script.js"></script>
+    <script src="getcontent.js"></script>
+    <script>
+        (window.onload = function() {
+            alert('PC 탐색에는 Chrome을 사용하는 것이 좋습니다.Google에서 번역 한 한국어 인터페이스.');
+            // var j = new XMLHttpRequest();
+            // j.open('GET', '//nthroomcase.imerlyn.top:8090/count', true);
+            // j.send();
+        })
+    </script>
+</body>
+
+</html>
